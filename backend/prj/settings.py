@@ -137,6 +137,7 @@ STATICFILES_DIRS = [
 
 ASGI_APPLICATION = "logger.ws_route_app.application"
 
+DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 REST_FRAMEWORK = {
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",
