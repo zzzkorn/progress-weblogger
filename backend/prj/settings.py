@@ -150,12 +150,12 @@ REST_FRAMEWORK = {
 WEBPACK_LOADER = {
     "DEFAULT": {
         "CACHE": not DEBUG,
-        "BUNDLE_DIR_NAME": "angular/",
+        "BUNDLE_DIR_NAME": "bundles/",
         "STATS_FILE": os.path.join(
             BASE_DIR,
             "static",
-            "angular",
-            "webpack-stats-angular.json",
+            "bundles",
+            "webpack-stats.dev.json",
         ),
         "POLL_INTERVAL": 0.1,
         "IGNORE": [r".+\.hot-update.js", r".+\.map"],
