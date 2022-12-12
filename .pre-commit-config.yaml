@@ -1,0 +1,30 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: check-yaml
+
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+        exclude: ^dist/
+
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: "main"
+    hooks:
+      - id: isort
+        args: ["--force-single-line-imports", "--skip-glob", "manage.py"]
+
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.9.0 # Use the ref you want to point at
+    hooks:
+      - id: python-use-type-annotations
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 3.9.2
+    hooks:
+      - id: flake8
+        additional_dependencies: [flake8-2020, flake8-implicit-str-concat]

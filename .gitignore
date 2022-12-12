@@ -1,0 +1,12 @@
+*.pyc
+__pycache__
+.pytest_cache
+venv/
+node_modules/
+package-lock.json
+.vscode
+.idea
+*.sqlite3
+migrations/
+static/
+.env
