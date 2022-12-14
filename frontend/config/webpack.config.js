@@ -564,7 +564,7 @@ module.exports = function (webpackEnv) {
       ].filter(Boolean),
     },
     plugins: [
-       new BundleTracker({path: paths.statsRoot, filename: 'webpack-stats.dev.json'}),
+       new BundleTracker({path: paths.statsRoot, filename: path.join(paths.appBuild, 'webpack-stats.dev.json')}),
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
         Object.assign(
