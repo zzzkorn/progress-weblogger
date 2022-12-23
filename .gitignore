@@ -6,7 +6,7 @@ node_modules/
 package-lock.json
 .vscode
 .idea
-*.sqlite3
+*.db3
 migrations/
 static/
 .env
