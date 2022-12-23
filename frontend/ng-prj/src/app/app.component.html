@@ -1,0 +1,27 @@
+<div fxLayout="column" fxLayoutAlign="space-between" id="app-content" >
+  
+  <div id="app-header" fxFlex="60px" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+    <img src="assets/images/Logo3.svg" width="160px" />
+    <span>{{description}}</span>
+    <div fxLayout="row" fxLayoutAlign="end center" fxFlex="100" fxLayoutGap="10px">
+      <button mat-raised-button color="link">Все сообщения</button>
+      <button mat-raised-button color="link" [matMenuTriggerFor]="devicesMenu">
+        Устройства
+      </button>
+      <mat-menu #devicesMenu="matMenu">
+        <ng-container *ngFor="let device of devices">
+          <button mat-menu-item [routerLink]="['messages/device', device['id']]">
+            {{ device['description'] }} ({{ device['ip_address'] }})
+            {{ device['message_count'] }}
+          </button>
+        </ng-container>
+      </mat-menu>
+    </div>
+  </div>
+
+  <div id="app-center">
+    <router-outlet></router-outlet>
+  </div>
+  
+  <div id="app-footer" fxFlex="40px">footer</div>
+</div>
