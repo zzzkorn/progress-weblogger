@@ -1,7 +1,7 @@
 ![Lint](https://github.com/zzzkorn/progress-weblogger/actions/workflows/lint.yml/badge.svg)
 # Backend
 
-## Деплой проекта
+## Деплой
 ```bash
 cd backend
 make
@@ -21,4 +21,14 @@ make generate
 ```
 
 # Frontend
-...
+
+## Деплой
+```bash
+cd frontend/ng-prj
+npm install
+```
+
+## Запуск сервера разработки
+```bash
+ng serve
+```
