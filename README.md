@@ -1,3 +1,4 @@
+![Lint](https://github.com/zzzkorn/progress-weblogger/actions/workflows/lint.yml/badge.svg)
 # Backend
 
 ## Деплой проекта
