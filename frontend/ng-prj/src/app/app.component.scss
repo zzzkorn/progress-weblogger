@@ -1,11 +1,17 @@
+#app-content {
+    height: 100%;
+}
+
 #app-header {
-    border: 1px solid blue;
+    background: #3f50b5;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #app-center {
-    border: 1px solid red;
+    background: #fafafa;
 }
 
 #app-footer {
-    border: 1px solid green;
+    background: #3f50b5;
 }
