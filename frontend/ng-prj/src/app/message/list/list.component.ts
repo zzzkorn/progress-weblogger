@@ -27,6 +27,7 @@ export class ListComponent implements OnInit {
   getMessageList(params: any) {
     this.apiService.getMessageList(params).subscribe((res: any) => {
       this.messageList = res;
+      console.log(res);
     });
   }
 
