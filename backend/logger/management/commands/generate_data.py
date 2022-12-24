@@ -59,7 +59,7 @@ class Command(BaseCommand):
             packet_type="received",
             device=device,
             message_type="packet",
-            data=json.dumps(self.send_message),
+            data=json.dumps(self.recieved_message),
             raw_data=self.bytes,
         ).save()
         Message(
