@@ -1,8 +1,11 @@
 from logger.models import Message
+from logger.serializers.device import DeviceShortSerializer
 from rest_framework import serializers
 
 
 class MessageSerializer(serializers.ModelSerializer):
+    device = DeviceShortSerializer()
+
     class Meta:
         model = Message
         fields = [
